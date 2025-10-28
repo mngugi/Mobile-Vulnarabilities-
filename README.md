@@ -105,4 +105,3 @@ Even though modern mobile platforms implement strong mitigations, the use of nat
 
 ---
 
-*End of Document*
