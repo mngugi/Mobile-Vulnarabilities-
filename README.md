@@ -103,7 +103,8 @@ Native components are commonly used for:
 Even though modern mobile platforms implement strong mitigations, the use of native code in mobile banking apps keeps buffer overflows a realistic and high-impact threat. Reducing native surface area, employing fuzzing and sanitizers, and rapid patching are essential to maintaining security integrity.
 
 ---
-Mobile Phone Vulnerability #1 ### Insecure Application Permissions Description
+# Mobile Phone Vulnerability #1 
+### Insecure Application Permissions Description
 
 Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when permissions are poorly managed by the operating system or the user. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
 
@@ -141,12 +142,10 @@ Review application permission requests during installation Analyze permission us
 
 Apply the principle of least privilege in app development Use runtime permission prompts instead of install-time approval Regularly audit installed applications and revoke unused permissions Install applications only from trusted sources Educate users on permission risks and best practices
 
-Severity
-
-High
-
-Category
+- Severity
+- High
+- Category
 
 ### Application Security
-
-### Privacy Violation ### Access Control Failure
+### Privacy Violation 
+### Access Control Failure
