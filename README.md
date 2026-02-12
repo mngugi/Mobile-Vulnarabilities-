@@ -1,4 +1,4 @@
-< span style="color:cyan"> <b> # Mobile Web Vulnerabilities </b></span>
+<span style="color:cyan"> <b> # Mobile Web Vulnerabilities </b></span>
 
 ---
 
