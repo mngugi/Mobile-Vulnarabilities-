@@ -1,4 +1,5 @@
 <span font color=#00e5ff; font-weight:700;">Mobile Web Vulnerabilities</span>
+
 ---
 
 ### Buffer Overflow Vulnerabilities in Mobile Banking Applications
