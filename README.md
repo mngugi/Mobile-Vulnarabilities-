@@ -1,9 +1,6 @@
-![High Severity](https://img.shields.io/badge/Severity-High-red)
-![Medium Severity](https://img.shields.io/badge/Severity-Medium-yellow)
-![Low Severity](https://img.shields.io/badge/Severity-Low-green)
 
-# Mobile Web Vulnerabilities 🔹
-**Severity:** ![High](https://img.shields.io/badge/Severity-High-red)
+
+**Severity:** ![# Mobile Web Vulnerabilities 🔹](https://img.shields.io/badge/Severity-High-red)
 **Category:** ![App Security](https://img.shields.io/badge/Category-App%20Security-blue)
 
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
