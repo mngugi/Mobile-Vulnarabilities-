@@ -1,3 +1,5 @@
+<span style="color:blue">some *blue* text</span>.
+   
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
 
 
