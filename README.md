@@ -1,4 +1,5 @@
-<span style="color:#00e5ff; font-weight:700;">Mobile Web Vulnerabilities</span>
+<font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
+
 
 ---
 
