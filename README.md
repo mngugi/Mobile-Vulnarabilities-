@@ -103,4 +103,50 @@ Native components are commonly used for:
 Even though modern mobile platforms implement strong mitigations, the use of native code in mobile banking apps keeps buffer overflows a realistic and high-impact threat. Reducing native surface area, employing fuzzing and sanitizers, and rapid patching are essential to maintaining security integrity.
 
 ---
+Mobile Phone Vulnerability #1 ### Insecure Application Permissions Description
 
+Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when permissions are poorly managed by the operating system or the user. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
+
+### Affected Platforms
+
+Android iOS
+
+### Technical Explanation
+
+Mobile operating systems use permission models to restrict application access to sensitive components such as the camera, microphone, contacts, **SMS**, call logs, location services, and storage. A vulnerability arises when:
+
+An application requests excessive permissions (permission creep)
+
+Permissions are granted permanently instead of contextually
+
+Permissions are reused by malicious components within the app
+
+Users approve permissions without understanding their impact
+
+Attackers can exploit these permissions to silently collect data, monitor user activity, or escalate attacks through chained vulnerabilities.
+
+### Potential Impact
+
+Unauthorized access to personal data Surveillance through camera or microphone Tracking user location without consent Exposure of contacts, messages, and call history Increased risk of identity theft and social engineering attacks
+
+### Example Attack Scenario
+
+A flashlight application requests access to contacts, microphone, and location services. Once installed, the app quietly uploads contact lists and records background audio, sending the data to a remote server controlled by an attacker.
+
+### Detection Methods
+
+Review application permission requests during installation Analyze permission usage using mobile security tools Monitor unusual background activity and network traffic Static and dynamic analysis of application behavior
+
+### Mitigation Strategies
+
+Apply the principle of least privilege in app development Use runtime permission prompts instead of install-time approval Regularly audit installed applications and revoke unused permissions Install applications only from trusted sources Educate users on permission risks and best practices
+
+Severity
+
+High
+
+Category
+
+### Application Security
+
+### Privacy Violation ### Access Control Failure
