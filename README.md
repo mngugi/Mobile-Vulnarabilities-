@@ -3,8 +3,7 @@
 # ![Mobile Web Vulnerabilities](https://img.shields.io/badge/Mobile%20Web%20Vulnerabilities-🔹-00bcd4)
 
 
-<font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
-
+# Mobile Web Vulnerabilities
 
 ---
 
