@@ -161,4 +161,90 @@ Apply the principle of least privilege in app development. Use runtime permissio
 ### Access Control Failure
 
 ---
+Mobile Web Vulnerability #2: Insecure Data Storage
+
+Severity: High
+
+Description
+
+Insecure Data Storage occurs when a mobile application stores sensitive information on the device without proper protection. This data may include usernames, passwords, authentication tokens, personal data, financial details, or cryptographic keys. Attackers with physical access, malware, or debugging tools can extract this information.
+
+### Affected Components
+
+Local databases (SQLite, Realm, Room)
+
+Shared Preferences / UserDefaults
+
+Local files and cache directories
+
+External storage (SD card)
+
+Logs and temporary files
+
+Backups (cloud or local)
+
+### Attack Scenario
+
+An attacker gains access to a lost or stolen mobile device. Using debugging tools or file system access, the attacker extracts application storage files and retrieves plaintext credentials or session tokens, allowing unauthorized access to user accounts or backend services.
+
+Impact
+
+Account takeover
+
+Identity theft
+
+Financial fraud
+
+Privacy violations
+
+Loss of user trust
+
+Regulatory and compliance violations
+
+### Common Causes
+
+Storing sensitive data in plaintext
+
+Using weak or no encryption
+
+Storing secrets in shared or external storage
+
+Leaving sensitive data in logs
+
+Improper backup configuration
+
+### Detection Methods
+
+Inspect application storage files manually
+
+Analyze application backups
+
+Reverse engineer the application package
+
+Use mobile security testing tools
+
+Review source code for insecure storage practices
+
+Mitigation
+
+Encrypt sensitive data using strong, platform‑approved cryptography
+
+Use secure storage mechanisms (Keystore / Keychain)
+
+Avoid storing sensitive data unless absolutely necessary
+
+Disable backups for sensitive application data
+
+Clear sensitive data from cache and logs
+
+### Best Practices
+
+Apply the principle of least data storage
+
+Use hardware‑backed security where available
+
+Rotate and expire stored tokens
+
+Perform regular mobile security testing
+---
 
