@@ -1,4 +1,4 @@
-${\color{red}This text is red}$   
+<p style="color:blue">Make this text blue.</p>  
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
 
 
