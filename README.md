@@ -1,4 +1,4 @@
-<p style="color:blue">Make this text blue.</p>  
+style="color:blue">Make this text blue.
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
 
 
