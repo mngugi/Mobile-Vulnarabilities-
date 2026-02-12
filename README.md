@@ -1,7 +1,7 @@
 
 
-**Severity:** ![# Mobile Web Vulnerabilities 🔹](https://img.shields.io/badge/Severity-High-red)
-**Category:** ![App Security](https://img.shields.io/badge/Category-App%20Security-blue)
+# ![Mobile Web Vulnerabilities](https://img.shields.io/badge/Mobile%20Web%20Vulnerabilities-🔹-00bcd4)
+
 
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
 
