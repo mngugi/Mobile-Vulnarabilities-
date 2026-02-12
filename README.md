@@ -1,4 +1,7 @@
-style="color:blue">Make this text blue.
+![High Severity](https://img.shields.io/badge/Severity-High-red)
+![Medium Severity](https://img.shields.io/badge/Severity-Medium-yellow)
+![Low Severity](https://img.shields.io/badge/Severity-Low-green)
+
 <font color="#00e5ff"><b>Mobile Web Vulnerabilities</b></font>
 
 
