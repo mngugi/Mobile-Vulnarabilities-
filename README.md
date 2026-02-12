@@ -128,19 +128,19 @@ Attackers can exploit these permissions to silently collect data, monitor user a
 
 ### Potential Impact
 
-Unauthorized access to personal data Surveillance through camera or microphone Tracking user location without consent Exposure of contacts, messages, and call history Increased risk of identity theft and social engineering attacks
+Unauthorized access to personal data, surveillance through camera or microphone, tracking user location without consent, exposure of contacts, messages, and call history. Increased risk of identity theft and social engineering attacks
 
 ### Example Attack Scenario
 
-A flashlight application requests access to contacts, microphone, and location services. Once installed, the app quietly uploads contact lists and records background audio, sending the data to a remote server controlled by an attacker.
+A flashlight application requests access to contacts, the microphone, and location services. Once installed, the app quietly uploads contact lists and records background audio, sending the data to a remote server controlled by an attacker.
 
 ### Detection Methods
 
-Review application permission requests during installation Analyze permission usage using mobile security tools Monitor unusual background activity and network traffic Static and dynamic analysis of application behavior
+Review application permission requests during installation. Analyze permission usage using mobile security tools, monitor unusual background activity and network traffic Static and dynamic analysis of application behavior
 
 ### Mitigation Strategies
 
-Apply the principle of least privilege in app development Use runtime permission prompts instead of install-time approval Regularly audit installed applications and revoke unused permissions Install applications only from trusted sources Educate users on permission risks and best practices
+Apply the principle of least privilege in app development. Use runtime permission prompts instead of install-time approval. Regularly audit installed applications and revoke unused permissions. Install applications only from trusted sources. Educate users on permission risks and best practices
 
 - Severity
 - High
@@ -149,3 +149,6 @@ Apply the principle of least privilege in app development Use runtime permission
 ### Application Security
 ### Privacy Violation 
 ### Access Control Failure
+
+---
+
