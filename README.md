@@ -3,13 +3,19 @@ Mobile phones vulnerabilities.
 
 ---
 
-### Title: Buffer Overflow Vulnerabilities in Mobile Banking Apps
-- description: "Analysis of how buffer overflow vulnerabilities in native code components still impact mobile banking apps, including threat models, detection methods, mitigations, and secure development practices."
-- author: "Peter Ngugi"
-- project: "Mobile Vulnerabilities"
-- category: "Memory Safety / Native Code"
-- tags: ["mobile-security", "buffer-overflow", "banking-apps", "native-code", "fuzzing", "memory-safety"]
-- date: 2025-10-28
+Title: Buffer Overflow Vulnerabilities in Mobile Banking Applications
+
+Description: An in-depth security analysis of buffer overflow vulnerabilities within native code components used by modern mobile banking applications. This document explores real-world threat models, exploitation paths, detection techniques, mitigation strategies, and secure development practices required to protect high-value financial targets.
+
+Author: Peter Ngugi
+
+Project: Mobile Vulnerabilities
+
+Category: Memory Safety / Native Code Security
+
+Tags: mobile-security buffer-overflow banking-applications native-code fuzz-testing memory-safety
+
+Date: **2025**-10-28
 
 ---
 
