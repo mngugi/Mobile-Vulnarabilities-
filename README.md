@@ -92,10 +92,10 @@ Native components are commonly used for:
 - [ ] Simulate attacks (malicious files, links, responses)  
 
 ## Remediation Blueprint
-1. Patch or remove outdated vulnerable native libraries.  
+1. Patch or remove outdated, vulnerable native libraries.  
 2. Validate inputs before native code execution.  
 3. Rebuild with hardening flags and deploy securely.  
-4. Rotate keys and invalidate exposed sessions if exploit suspected.  
+4. Rotate keys and invalidate exposed sessions if an exploit is suspected.  
 
 ## Responsible Disclosure and Incident Response
 - Contact third-party vendors for vulnerable libraries and follow CVE disclosure practices.  
