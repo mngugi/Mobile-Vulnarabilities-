@@ -161,33 +161,29 @@ Apply the principle of least privilege in app development. Use runtime permissio
 ### Access Control Failure
 
 ---
-Mobile Web Vulnerability #2: Insecure Data Storage
 
-Severity: High
+## Mobile Web Vulnerability #2: Insecure Data Storage
 
-Description
+* Severity: High
+
+#### Description
 
 Insecure Data Storage occurs when a mobile application stores sensitive information on the device without proper protection. This data may include usernames, passwords, authentication tokens, personal data, financial details, or cryptographic keys. Attackers with physical access, malware, or debugging tools can extract this information.
 
 ### Affected Components
 
-Local databases (SQLite, Realm, Room)
-
-Shared Preferences / UserDefaults
-
-Local files and cache directories
-
-External storage (SD card)
-
-Logs and temporary files
-
-Backups (cloud or local)
+- Local databases (SQLite, Realm, Room)
+- Shared Preferences / UserDefaults
+- Local files and cache directories
+- External storage (SD card)
+- Logs and temporary files
+- Backups (cloud or local)
 
 ### Attack Scenario
 
-An attacker gains access to a lost or stolen mobile device. Using debugging tools or file system access, the attacker extracts application storage files and retrieves plaintext credentials or session tokens, allowing unauthorized access to user accounts or backend services.
+* An attacker gains access to a lost or stolen mobile device. Using debugging tools or file system access, the attacker extracts application storage files and retrieves plaintext credentials or session tokens, allowing unauthorized access to user accounts or backend services.
 
-Impact
+#### Impact
 
 Account takeover
 
@@ -239,12 +235,10 @@ Clear sensitive data from cache and logs
 
 ### Best Practices
 
-Apply the principle of least data storage
-
-Use hardware‑backed security where available
-
-Rotate and expire stored tokens
-
-Perform regular mobile security testing
+- Apply the principle of least data storage
+- Use hardware‑backed security where available
+- Rotate and expire stored tokens
+- Perform regular mobile security testing
+- 
 ---
 
