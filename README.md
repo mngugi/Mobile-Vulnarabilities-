@@ -8,7 +8,7 @@
 ---
 
 ### Buffer Overflow Vulnerabilities in Mobile Banking Applications
-
+---
 **Description:** An in-depth security analysis of buffer overflow vulnerabilities within native code components used by modern mobile banking applications. This document explores real-world threat models, exploitation paths, detection techniques, mitigation strategies, and secure development practices required to protect high-value financial targets.
 
 **Author:** Peter Ngugi
