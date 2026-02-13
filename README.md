@@ -221,3 +221,135 @@ Insecure Data Storage occurs when a mobile application stores sensitive informat
 - 
 ---
 
+Mobile Vulnerability #3: Insecure Data Storage on Mobile Devices
+Description
+
+Insecure Data Storage occurs when a mobile application stores sensitive information locally on the device without proper protection.
+
+Sensitive data may be stored in plaintext or weakly protected storage locations.
+
+Common insecure storage locations include:
+
+Shared preferences
+
+Local databases
+
+External storage (SD card)
+
+Application logs
+
+Cached files
+
+Attackers with physical access, malware, or debugging tools can easily extract this data.
+
+Affected Platforms
+
+Android
+
+iOS
+
+Hybrid mobile applications
+
+Commonly Exposed Data
+
+Usernames and passwords
+
+Authentication tokens and session IDs
+
+Personally Identifiable Information (PII)
+
+Financial data
+
+Cryptographic keys
+
+API keys and secrets
+
+Attack Scenario
+
+An attacker gains physical access to a user’s mobile device or installs malicious software.
+
+The attacker accesses the application’s local storage directories.
+
+Sensitive data stored in plaintext is extracted using:
+
+File explorers
+
+Backup tools
+
+Debugging utilities
+
+The attacker reuses extracted credentials or tokens to:
+
+Impersonate the user
+
+Access backend systems
+
+Impact
+
+Account takeover
+
+Identity theft
+
+Financial fraud
+
+Privacy violations
+
+Backend system compromise
+
+Regulatory and compliance violations
+
+Root Causes
+
+Storing sensitive data in plaintext
+
+Using external storage for confidential information
+
+Lack of encryption for local databases and files
+
+Hardcoded secrets in application code
+
+Poor cryptographic key management practices
+
+Detection Methods
+
+Static analysis of application source code
+
+Reverse engineering APK and IPA files
+
+Inspecting local storage during application runtime
+
+Dynamic analysis using:
+
+Emulators
+
+Rooted or jailbroken devices
+
+Mitigation Strategies
+
+Avoid storing sensitive data locally whenever possible
+
+Use platform-provided secure storage mechanisms:
+
+Android Keystore
+
+iOS Keychain
+
+Encrypt all sensitive data at rest using strong cryptography
+
+Disable application backups for sensitive data
+
+Remove sensitive data from logs and cache
+
+Implement secure key management and regular key rotation
+
+Severity
+
+High
+
+References
+
+OWASP Mobile Top 10 – M2: Insecure Data Storage
+
+Android Security Best Practices
+
+Apple iOS Security Guide
