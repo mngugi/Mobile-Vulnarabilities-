@@ -116,41 +116,37 @@ Even though modern mobile platforms implement strong mitigations, the use of nat
 # Mobile Phone Vulnerability #1 
 ### Insecure Application Permissions Description
 
-Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when permissions are poorly managed by the operating system or the user. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
+- Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when permissions are poorly managed by the operating system or the user. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
 
 ### Affected Platforms
 
-Android iOS
+- Android iOS
 
 ### Technical Explanation
 
-Mobile operating systems use permission models to restrict application access to sensitive components such as the camera, microphone, contacts, **SMS**, call logs, location services, and storage. A vulnerability arises when:
+- Mobile operating systems use permission models to restrict application access to sensitive components such as the camera, microphone, contacts, **SMS**, call logs, location services, and storage. A vulnerability arises when:
 
-An application requests excessive permissions (permission creep)
-
-Permissions are granted permanently instead of contextually
-
-Permissions are reused by malicious components within the app
-
-Users approve permissions without understanding their impact
-
-Attackers can exploit these permissions to silently collect data, monitor user activity, or escalate attacks through chained vulnerabilities.
+- An application requests excessive permissions (permission creep)
+- Permissions are granted permanently instead of contextually
+- Permissions are reused by malicious components within the app
+- Users approve permissions without understanding their impact
+- Attackers can exploit these permissions to silently collect data, monitor user activity, or escalate attacks through chained vulnerabilities.
 
 ### Potential Impact
 
-Unauthorized access to personal data, surveillance through camera or microphone, tracking user location without consent, exposure of contacts, messages, and call history. Increased risk of identity theft and social engineering attacks
+* Unauthorized access to personal data, surveillance through camera or microphone, tracking user location without consent, exposure of contacts, messages, and call history. Increased risk of identity theft and social engineering attacks
 
 ### Example Attack Scenario
 
-A flashlight application requests access to contacts, the microphone, and location services. Once installed, the app quietly uploads contact lists and records background audio, sending the data to a remote server controlled by an attacker.
+* A flashlight application requests access to contacts, the microphone, and location services. Once installed, the app quietly uploads contact lists and records background audio, sending the data to a remote server controlled by an attacker.
 
 ### Detection Methods
 
-Review application permission requests during installation. Analyze permission usage using mobile security tools, monitor unusual background activity and network traffic Static and dynamic analysis of application behavior
+* Review application permission requests during installation. Analyze permission usage using mobile security tools, monitor unusual background activity, and network traffic. Static and dynamic analysis of application behavior
 
 ### Mitigation Strategies
 
-Apply the principle of least privilege in app development. Use runtime permission prompts instead of install-time approval. Regularly audit installed applications and revoke unused permissions. Install applications only from trusted sources. Educate users on permission risks and best practices
+- Apply the principle of least privilege in app development. Use runtime permission prompts instead of install-time approval. Regularly audit installed applications and revoke unused permissions. Install applications only from trusted sources. Educate users on permission risks and best practices
 
 - Severity
 - High
@@ -162,7 +158,7 @@ Apply the principle of least privilege in app development. Use runtime permissio
 
 ---
 
-## Mobile Web Vulnerability #2: Insecure Data Storage
+# Mobile Web Vulnerability #2: Insecure Data Storage
 
 * Severity: High
 
@@ -185,53 +181,36 @@ Insecure Data Storage occurs when a mobile application stores sensitive informat
 
 #### Impact
 
-Account takeover
-
-Identity theft
-
-Financial fraud
-
-Privacy violations
-
-Loss of user trust
-
-Regulatory and compliance violations
+- Account takeover
+- Identity theft
+- Financial fraud
+- Privacy violations
+- Loss of user trust
+- Regulatory and compliance violations
 
 ### Common Causes
 
-Storing sensitive data in plaintext
-
-Using weak or no encryption
-
-Storing secrets in shared or external storage
-
-Leaving sensitive data in logs
-
-Improper backup configuration
+- Storing sensitive data in plaintext
+- Using weak or no encryption
+- Storing secrets in shared or external storage
+- Leaving sensitive data in logs
+- Improper backup configuration
 
 ### Detection Methods
 
-Inspect application storage files manually
+- Inspect application storage files manually
+- Analyze application backups
+- Reverse engineer the application package
+- Use mobile security testing tools
+- Review the source code for insecure storage practices
 
-Analyze application backups
+### Mitigation
 
-Reverse engineer the application package
-
-Use mobile security testing tools
-
-Review source code for insecure storage practices
-
-Mitigation
-
-Encrypt sensitive data using strong, platform‑approved cryptography
-
-Use secure storage mechanisms (Keystore / Keychain)
-
-Avoid storing sensitive data unless absolutely necessary
-
-Disable backups for sensitive application data
-
-Clear sensitive data from cache and logs
+- Encrypt sensitive data using strong, platform‑approved cryptography
+- Use secure storage mechanisms (Keystore / Keychain)
+- Avoid storing sensitive data unless necessary
+- Disable backups for sensitive application data
+-Clear sensitive data from cache and logs
 
 ### Best Practices
 
