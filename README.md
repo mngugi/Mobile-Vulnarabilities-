@@ -353,3 +353,102 @@ OWASP Mobile Top 10 – M2: Insecure Data Storage
 Android Security Best Practices
 
 Apple iOS Security Guide
+
+---
+
+Mobile Vulnerability #4: Insecure Authentication and Authorization
+Description
+
+Insecure Authentication and Authorization occurs when a mobile application fails to properly verify user identity or enforce access controls. Weak authentication mechanisms or broken authorization logic allow attackers to bypass login controls, escalate privileges, or access restricted resources.
+
+Affected Platforms
+
+Android
+
+iOS
+
+Cross-platform mobile applications
+
+Common Weaknesses
+
+Hardcoded credentials
+
+Weak or predictable passwords
+
+Missing or improper session validation
+
+Client-side authorization checks
+
+Insecure token handling
+
+Absence of multi-factor authentication (MFA)
+
+Attack Scenario
+
+An attacker analyzes the mobile application traffic or source code.
+
+Authentication tokens or credentials are discovered or guessed.
+
+The attacker reuses or manipulates tokens to bypass authentication.
+
+Unauthorized access is gained to user accounts or privileged functions.
+
+Impact
+
+Unauthorized access to user accounts
+
+Privilege escalation
+
+Data leakage
+
+Service abuse
+
+Loss of trust and reputational damage
+
+Root Causes
+
+Authentication logic implemented on the client side
+
+Improper session management
+
+Lack of token expiration and validation
+
+Missing role-based access control (RBAC)
+
+Poor password and credential policies
+
+Detection Methods
+
+Testing authentication flows with invalid or modified tokens
+
+Reviewing client-side logic for access control decisions
+
+Monitoring API endpoints for unauthorized access
+
+Static and dynamic application security testing
+
+Mitigation Strategies
+
+Enforce authentication and authorization on the server side
+
+Use strong, industry-standard authentication protocols
+
+Implement proper session and token management
+
+Apply role-based access control (RBAC)
+
+Enable multi-factor authentication where possible
+
+Regularly audit authentication and authorization logic
+
+Severity
+
+Critical
+
+References
+
+OWASP Mobile Top 10 – M3: Insecure Authentication
+
+OWASP Mobile Top 10 – M6: Insecure Authorization
+
+NIST Digital Identity Guidelines
