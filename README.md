@@ -56,7 +56,7 @@ Native components are commonly used for:
 
 ## Detection and Forensic Value
 - **Crash reports:** Native crashes (SIGSEGV) referencing native libraries indicate possible overflow.  
-- **Memory dumps / heap snapshots:** May contain leaked sensitive data like keys or tokens.  
+- **Memory dumps/heap snapshots:** May contain leaked sensitive data like keys or tokens.  
 - **Indicators:** Repeated crashes in same native module, anomalous processes, unexpected network activity after crash.  
 - **Forensic limits:** OS protections make full memory analysis difficult, but crash logs, ANR traces, and minidumps are valuable.
 
