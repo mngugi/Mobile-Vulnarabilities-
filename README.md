@@ -70,7 +70,7 @@ Native components are commonly used for:
 - Build with PIE and enable ASLR.  
 - Use AddressSanitizer/UndefinedBehaviorSanitizer in testing.  
 - Validate all inputs before passing to native layers.  
-- Implement secure parsing for complex formats with whitelist and size limits.  
+- Implement secure parsing for complex formats with a whitelist and size limits.  
 
 ### Build and CI/CD
 - Integrate static analysis (clang-tidy, Coverity).  
