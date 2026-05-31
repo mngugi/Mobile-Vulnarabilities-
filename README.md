@@ -116,7 +116,7 @@ Even though modern mobile platforms implement strong mitigations, the use of nat
 # Mobile Phone Vulnerability #1 
 ### Insecure Application Permissions Description
 
-- Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when permissions are poorly managed by the operating system or the user. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
+- Insecure application permissions occur when a mobile application requests more permissions than necessary for its core functionality, or when the operating system or the user poorly manages permissions. This over-permissioning increases the attack surface of the device and allows malicious or compromised applications to access sensitive resources.
 
 ### Affected Platforms
 
