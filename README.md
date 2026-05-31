@@ -359,7 +359,7 @@ Apple iOS Security Guide
 Mobile Vulnerability #4: Insecure Authentication and Authorization
 Description
 
-Insecure Authentication and Authorization occurs when a mobile application fails to properly verify user identity or enforce access controls. Weak authentication mechanisms or broken authorization logic allow attackers to bypass login controls, escalate privileges, or access restricted resources.
+Insecure Authentication and Authorization occur when a mobile application fails to properly verify user identity or enforce access controls. Weak authentication mechanisms or broken authorization logic allow attackers to bypass login controls, escalate privileges, or access restricted resources.
 
 Affected Platforms
 
