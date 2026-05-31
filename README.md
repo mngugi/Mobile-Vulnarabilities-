@@ -39,7 +39,7 @@ Native components are commonly used for:
 
 ## Threat Model
 **Attacker goal:** Remote code execution in app process, read sensitive memory, bypass authentication, tamper transactions.  
-**Assumptions:** Attacker can control input to a native interface (file, network response, intent payload, URI, user-supplied data, or IPC) or trick app into loading a malicious native library (supply-chain or update compromise).  
+**Assumptions:** Attacker can control input to a native interface (file, network response, intent payload, URI, user-supplied data, or IPC) or trick the app into loading a malicious native library (supply-chain or update compromise).  
 **Constraints:** Modern mobile OSes (Android, iOS) apply sandboxing, ASLR, and code signing, but these controls can be bypassed or limited in scope if the overflow achieves a controlled code path, or if a vulnerable library holds secrets in-process.
 
 ## Typical Vulnerable Patterns
